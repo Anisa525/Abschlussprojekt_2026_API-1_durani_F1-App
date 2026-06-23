@@ -29,12 +29,13 @@ function App() {
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Statistiken" element={<Statistiken />} />
         <Route path="/Chart" element={<Chart />} />
+        <Route path="/Circuits" element={<Circuits />} />
+
 
         <Route path="/RaceDetail/:id" element={<RaceDetail />} />
         <Route path="/DriverDetail/:id" element={<DriverDetail />} />
 
-        <Route path="/Circuits" element={<Circuits />} />
-
+        
         <Route path="*" element={<NotFound />} />
       </Routes>
     </HashRouter>
