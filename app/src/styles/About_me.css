@@ -20,7 +20,6 @@
   color: #cbd5e1;
   margin-bottom: 40px;
   font-size: 1.2rem;
-  line-height: 1.5;
 }
 
 /* HERO */
@@ -58,10 +57,10 @@
   line-height: 1.6;
 }
 
-/* STATS */
+/* STATS - TRUE RESPONSIVE GRID */
 .about-stats {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
   margin-bottom: 40px;
 }
@@ -73,6 +72,10 @@
   padding: 20px;
   text-align: center;
   transition: 0.3s;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .stat-card:hover {
@@ -109,7 +112,7 @@
 }
 
 /* =========================
-   📱 RESPONSIVE DESIGN
+   RESPONSIVE DESIGN
    ========================= */
 
 /* TABLET */
@@ -117,17 +120,9 @@
   .about-title {
     font-size: 2.5rem;
   }
-
-  .about-stats {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .about-hero {
-    gap: 20px;
-  }
 }
 
-/* SMALL TABLET / LARGE PHONE */
+/* MOBILE HERO STACK */
 @media (max-width: 768px) {
   .about-hero {
     flex-direction: column;
@@ -138,13 +133,9 @@
     width: 150px;
     height: 150px;
   }
-
-  .about-text p {
-    font-size: 0.95rem;
-  }
 }
 
-/* MOBILE */
+/* SMALL MOBILE */
 @media (max-width: 600px) {
   .about-page {
     padding: 20px;
@@ -158,25 +149,13 @@
     font-size: 1rem;
   }
 
-  .about-stats {
-    grid-template-columns: 1fr;
-  }
-
   .stat-card {
     padding: 15px;
   }
-
-  .about-hero {
-    padding: 20px;
-  }
 }
 
-/* VERY SMALL PHONES */
+/* VERY SMALL DEVICES */
 @media (max-width: 400px) {
-  .about-title {
-    font-size: 1.7rem;
-  }
-
   .about-image {
     width: 130px;
     height: 130px;

@@ -5,6 +5,8 @@ const stats = [
   { label: "Favourite Driver", value: "Max Verstappen" },
   { label: "Favourite Circuit", value: "Spa-Francorchamps" },
   { label: "Seasons Watched", value: "8+" },
+  { label: "Races Watched", value: "100+" },
+  { label: "Passion Level", value: "∞" },
 ];
 
 function AboutMe() {
@@ -13,10 +15,10 @@ function AboutMe() {
       <h1 className="about-title">🏎️ About Me</h1>
 
       <p className="about-subtitle">
-        A passionate Formula 1 fan building a modern F1 dashboard website
+        A Formula 1 fan building a modern racing dashboard
       </p>
 
-      {/* HERO SECTION */}
+      {/* HERO */}
       <div className="about-hero">
         <img
           src="/images/profile.jpg"
@@ -25,17 +27,16 @@ function AboutMe() {
         />
 
         <div className="about-text">
-          <h2>Hey, I'm a F1 Enthusiast 🏁</h2>
+          <h2>Hey, I'm an F1 Enthusiast 🏁</h2>
           <p>
-            I created this website because I love Formula 1, racing strategy,
-            and the thrill of high-speed competition.
-            My goal is to build a clean, modern F1 dashboard with stats,
-            circuits, and live data in the future.
+            I love Formula 1 because it's the perfect mix of speed, strategy,
+            engineering and teamwork. This project is my way of building a
+            modern F1 dashboard with stats, circuits and future live data.
           </p>
         </div>
       </div>
 
-      {/* STATS SECTION */}
+      {/* STATS */}
       <div className="about-stats">
         {stats.map((item, index) => (
           <div className="stat-card" key={index}>
@@ -45,13 +46,13 @@ function AboutMe() {
         ))}
       </div>
 
-      {/* MOTIVATION SECTION */}
+      {/* MOTIVATION */}
       <div className="about-motivation">
         <h2>🔥 Why this project?</h2>
         <p>
-          Formula 1 is more than just racing – it's engineering, teamwork,
-          strategy, and precision. This project helps me combine my passion
-          for F1 with web development skills.
+          Formula 1 is not just a sport — it's precision engineering, split-second
+          decisions and pure adrenaline. This website combines my passion for F1
+          with web development skills to create something modern and interactive.
         </p>
       </div>
     </div>
