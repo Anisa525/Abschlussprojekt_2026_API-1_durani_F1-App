@@ -6,18 +6,23 @@
   font-family: Arial, sans-serif;
 }
 
+/* 🏎️ Titel */
 .home-container h1 {
   font-size: 3rem;
   margin-bottom: 20px;
   color: #ef4444;
+  line-height: 1.2;
 }
 
+/* Untertitel */
 .home-container h2 {
   margin-top: 30px;
   margin-bottom: 15px;
   color: #f8fafc;
+  font-size: 1.5rem;
 }
 
+/* Text */
 .home-container p {
   font-size: 1.1rem;
   line-height: 1.8;
@@ -25,18 +30,20 @@
   margin: 0 auto;
 }
 
+/* Intro */
 .home-intro {
   font-size: 1.3rem;
   font-weight: bold;
 }
 
+/* Fun Fact */
 .fun-fact {
   font-style: italic;
   color: #fbbf24;
   font-size: 1.2rem;
 }
 
-/* Kleiner Formel-1 Effekt */
+/* 🏁 Animation */
 .home-container::after {
   content: "🏁 🏎️ 🏁";
   display: block;
@@ -46,15 +53,49 @@
 }
 
 @keyframes pulse {
-  0% {
-    transform: scale(1);
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 30px 15px;
   }
 
-  50% {
-    transform: scale(1.15);
+  .home-container h1 {
+    font-size: 2rem;
   }
 
-  100% {
-    transform: scale(1);
+  .home-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .home-container p {
+    font-size: 1rem;
+  }
+
+  .home-intro {
+    font-size: 1.1rem;
+  }
+
+  .fun-fact {
+    font-size: 1rem;
+  }
+}
+
+/* 📱 extra kleine Handys */
+@media (max-width: 480px) {
+  .home-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .home-container h2 {
+    font-size: 1rem;
+  }
+
+  .home-container::after {
+    font-size: 1.5rem;
   }
 }
