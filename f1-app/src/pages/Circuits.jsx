@@ -23,7 +23,7 @@ const circuits = [
   "Circuit Gilles Villeneuve"
 ];
 
-function PopularCircuits() {
+function Circuits() {
   return (
     <div className="circuits-page">
       <h1 className="circuits-title">🏎️ Beliebte F1-Strecken</h1>
@@ -41,4 +41,4 @@ function PopularCircuits() {
   );
 }
 
-export default PopularCircuits;
+export default Circuits;
