@@ -1,4 +1,8 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/About_me.css";
+// 1. IMPORTIERE das Bild hier oben (Achtung auf das große/kleine .PNG/.png!)
+import profileImg from "./images/anisa.PNG"; 
 
 const stats = [
   { label: "Favourite Team", value: "MacLaren" },
@@ -18,8 +22,9 @@ function AboutMe() {
 
       {/* HERO */}
       <div className="about-hero">
+        {/* 2. NUTZE hier die importierte Variable in geschweiften Klammern */}
         <img
-          src="./images/anisa.PNG"
+          src={profileImg} 
           alt="Profile"
           className="about-image"
         />
