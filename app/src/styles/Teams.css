@@ -3,11 +3,6 @@
   padding: 25px;
   color: white;
   font-family: Arial, sans-serif;
-
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .teams-title {
@@ -16,72 +11,58 @@
   margin-bottom: 25px;
 }
 
-/* Search */
 .teams-search {
   display: block;
   width: 100%;
   max-width: 500px;
-  margin: 0 auto 30px auto;
-
+  margin: auto;
   padding: 12px;
   border: none;
   border-radius: 12px;
-
   background: #334155;
   color: white;
   font-size: 16px;
-
-  transition: 0.3s;
+  margin-bottom: 30px;
 }
 
 .teams-search:focus {
   outline: 2px solid #ef4444;
 }
 
-/* Grid */
 .teams-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-
-  width: 100%;
-  justify-items: center; /* 🔥 zentriert Cards */
 }
 
-/* Card */
 .team-card {
   position: relative;
   background: #1e293b;
   padding: 25px;
   border-radius: 15px;
-
   overflow: hidden;
-
   transition: 0.3s;
   border: 1px solid #334155;
-
-  width: 100%;
-  max-width: 320px; /* 🔥 wichtig für einheitliches Card-Feeling */
 }
 
-/* Hover */
 .team-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(239, 68, 68, 0.3);
 }
 
-/* Akzentstreifen */
-.team-card::before {
-  content: "";
+.team-stripe {
   position: absolute;
   top: 0;
   left: 0;
   height: 5px;
   width: 100%;
-  background: linear-gradient(90deg, #ef4444, #f97316);
+  background: linear-gradient(
+    90deg,
+    #ef4444,
+    #f97316
+  );
 }
 
-/* Text */
 .team-card h2 {
   margin-top: 10px;
   margin-bottom: 15px;
@@ -93,28 +74,16 @@
   margin-bottom: 8px;
 }
 
-/* 📱 Tablet */
+/* Tablet */
 @media (max-width: 900px) {
   .teams-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* 📱 Handy */
+/* Handy */
 @media (max-width: 600px) {
   .teams-grid {
     grid-template-columns: 1fr;
-  }
-
-  .team-card {
-    max-width: 100%;
-  }
-
-  .teams-title {
-    font-size: 1.8rem;
-  }
-
-  .teams-search {
-    max-width: 100%;
   }
 }
