@@ -1,69 +1,61 @@
-import "../styles/Circuits.css";
+import "../styles/About_me.css";
 
-const circuits = [
-  {
-    name: "Monaco",
-    country: "Monaco",
-    image: "/circuits/monaco.jpg",
-  },
-  {
-    name: "Silverstone",
-    country: "Großbritannien",
-    image: "/circuits/silverstone.jpg",
-  },
-  {
-    name: "Spa-Francorchamps",
-    country: "Belgien",
-    image: "/circuits/spa.jpg",
-  },
-  {
-    name: "Monza",
-    country: "Italien",
-    image: "/circuits/monza.jpg",
-  },
-  {
-    name: "Suzuka",
-    country: "Japan",
-    image: "/circuits/suzuka.jpg",
-  },
-  {
-    name: "Interlagos",
-    country: "Brasilien",
-    image: "/circuits/interlagos.jpg",
-  },
+const stats = [
+  { label: "Favourite Team", value: "Red Bull Racing" },
+  { label: "Favourite Driver", value: "Max Verstappen" },
+  { label: "Favourite Circuit", value: "Spa-Francorchamps" },
+  { label: "Seasons Watched", value: "8+" },
 ];
 
-function Circuits() {
+function AboutMe() {
   return (
-    <div className="circuits-page">
-      <h1 className="circuits-title">
-        🏁 20 Beliebte F1 Strecken 🏁
-      </h1>
+    <div className="about-page">
+      <h1 className="about-title">🏎️ About Me</h1>
 
-      <p className="circuits-subtitle">
-        Die bekanntesten Rennstrecken der Formel 1
+      <p className="about-subtitle">
+        A passionate Formula 1 fan building a modern F1 dashboard website
       </p>
 
-      <div className="circuits-grid">
-        {circuits.map((circuit, index) => (
-          <div className="circuit-card" key={index}>
-            <span className="circuit-number">{index + 1}</span>
+      {/* HERO SECTION */}
+      <div className="about-hero">
+        <img
+          src="/images/profile.jpg"
+          alt="Profile"
+          className="about-image"
+        />
 
-            <img
-              src={circuit.image}
-              alt={circuit.name}
-              className="circuit-image"
-            />
+        <div className="about-text">
+          <h2>Hey, I'm a F1 Enthusiast 🏁</h2>
+          <p>
+            I created this website because I love Formula 1, racing strategy,
+            and the thrill of high-speed competition.
+            My goal is to build a clean, modern F1 dashboard with stats,
+            circuits, and live data in the future.
+          </p>
+        </div>
+      </div>
 
-            <div className="circuit-info">
-              <h3>{circuit.name}</h3>
-              <p>{circuit.country}</p>
-            </div>
+      {/* STATS SECTION */}
+      <div className="about-stats">
+        {stats.map((item, index) => (
+          <div className="stat-card" key={index}>
+            <h3>{item.value}</h3>
+            <p>{item.label}</p>
           </div>
         ))}
+      </div>
+
+      {/* MOTIVATION SECTION */}
+      <div className="about-motivation">
+        <h2>🔥 Why this project?</h2>
+        <p>
+          Formula 1 is more than just racing – it's engineering, teamwork,
+          strategy, and precision. This project helps me combine my passion
+          for F1 with web development skills.
+        </p>
       </div>
     </div>
   );
 }
 
-export default Circuits;
+export default AboutMe;
