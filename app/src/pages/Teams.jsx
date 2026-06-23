@@ -51,7 +51,7 @@ function Teams() {
             </p>
 
             <p>
-              🆔 Team-ID: {team.constructor_id}
+              Team-ID: {team.constructor_id}
             </p>
           </div>
         ))}

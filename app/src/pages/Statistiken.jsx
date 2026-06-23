@@ -74,10 +74,10 @@ function Statistiken() {
 
   return (
     <div className="stats-container">
-      <h1>📊 Formel 1 Statistiken</h1>
+      <h1>Formel 1 Statistiken</h1>
 
       <div className="stats-section">
-        <h2>🏆 Siege pro Fahrer</h2>
+        <h2>Siege pro Fahrer</h2>
 
         {Object.entries(driverWins)
           .sort((a, b) => b[1] - a[1])
@@ -90,7 +90,7 @@ function Statistiken() {
       </div>
 
       <div className="stats-section">
-        <h2>🏎️ Punkte pro Team</h2>
+        <h2>Punkte pro Team</h2>
 
         {Object.entries(teamPoints)
           .sort((a, b) => b[1] - a[1])
@@ -103,7 +103,7 @@ function Statistiken() {
       </div>
 
       <div className="stats-section">
-        <h2>📅 Rennen pro Saison</h2>
+        <h2>Rennen pro Saison</h2>
 
         {Object.entries(racesPerSeason)
           .sort((a, b) => b[0] - a[0])

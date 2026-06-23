@@ -23,7 +23,7 @@ function Races() {
 
   return (
     <div className="race-page">
-      <h1 className="race-title">🏁 Rennen</h1>
+      <h1 className="race-title">Rennen</h1>
 
       <input
         className="race-search"

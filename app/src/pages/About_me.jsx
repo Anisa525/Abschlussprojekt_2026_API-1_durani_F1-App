@@ -1,10 +1,10 @@
 import "../styles/About_me.css";
 
 const stats = [
-  { label: "Favourite Team", value: "Red Bull Racing" },
-  { label: "Favourite Driver", value: "Max Verstappen" },
-  { label: "Races Watched", value: "100+" },
-  { label: "Passion Level", value: "∞" },
+  { label: "Favourite Team", value: "MacLaren" },
+  { label: "Favourite Driver", value: "Lando Norris" },
+  { label: "Races Watched", value: "10" },
+  { label: "Passion Level", value: "1" },
 ];
 
 function AboutMe() {
@@ -13,7 +13,7 @@ function AboutMe() {
       <h1 className="about-title">🏎️ About Me</h1>
 
       <p className="about-subtitle">
-        A Formula 1 fan building a modern racing dashboard
+        Wilkommen zu meiner F1 Dashboard App!
       </p>
 
       {/* HERO */}
@@ -25,11 +25,11 @@ function AboutMe() {
         />
 
         <div className="about-text">
-          <h2>Hey, I'm an F1 Enthusiast 🏁</h2>
+          <h2>Hey, </h2>
           <p>
-            I love Formula 1 because it's the perfect mix of speed, strategy,
-            engineering and teamwork. This project is my way of building a
-            modern F1 dashboard with stats, circuits and future live data.
+            Ich habe sehr viele Freunde welche F1 Fans sind und ich wollte eine App erstellen, 
+            die ihnen hilft, die neuesten Statistiken und Informationen über ihre Lieblingsfahrer und 
+            Teams zu erhalten.
           </p>
         </div>
       </div>
@@ -48,9 +48,9 @@ function AboutMe() {
       <div className="about-motivation">
         <h2>🔥 Why this project?</h2>
         <p>
-          Formula 1 is not just a sport — it's precision engineering, split-second
-          decisions and pure adrenaline. This website combines my passion for F1
-          with web development skills to create something modern and interactive.
+          Formel 1 ist eine der aufregendsten Sportarten der Welt, und ich wollte eine App erstellen, 
+          die es den Fans ermöglicht, die neuesten Informationen über ihre Lieblingsfahrer und Teams zu erhalten. 
+          Ich hoffe, dass diese App den Fans hilft, die F1 noch mehr zu genießen!
         </p>
       </div>
     </div>
