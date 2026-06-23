@@ -9,7 +9,6 @@ import Statistiken from "./pages/Statistiken";
 import RaceDetail from "./pages/RaceDetail";
 import DriverDetail from "./pages/DriverDetail";
 import Chart from "./pages/Chart";
-import Circuits from "./pages/Circuits";
 import NotFound from "./pages/NotFound";
 
 import Navbar from "./components/Navbar";
@@ -32,8 +31,6 @@ function App() {
 
         <Route path="/RaceDetail/:id" element={<RaceDetail />} />
         <Route path="/DriverDetail/:id" element={<DriverDetail />} />
-
-        <Route path="/Circuits" element={<Circuits />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
