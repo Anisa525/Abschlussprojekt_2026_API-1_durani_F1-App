@@ -1,0 +1,88 @@
+.circuits-page {
+  min-height: 100vh;
+  padding: 30px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.circuits-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #ef4444;
+}
+
+.circuits-subtitle {
+  text-align: center;
+  color: #cbd5e1;
+  margin-bottom: 35px;
+  font-size: 1.2rem;
+}
+
+.circuits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.circuit-card {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
+}
+
+.circuit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(239, 68, 68, 0.3);
+}
+
+.circuit-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ef4444;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.circuit-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.circuit-info {
+  padding: 18px;
+}
+
+.circuit-info h3 {
+  margin-bottom: 8px;
+}
+
+.circuit-info p {
+  color: #cbd5e1;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .circuits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Handy */
+@media (max-width: 600px) {
+  .circuits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .circuits-title {
+    font-size: 2rem;
+  }
+}

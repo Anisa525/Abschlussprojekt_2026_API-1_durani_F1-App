@@ -1,6 +1,6 @@
 {
-  "homepage": "",
-  "name": "abschlussprojekt-2026-api1-durani-f1-app",
+  "homepage": "https://Anisa525.github.io/Abschlussprojekt_2026_API-1_durani_F1-App",
+  "name": "abschlussprojekt-2026-api1-retfro-board-f1-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -18,8 +20,9 @@
     "eslint": "^10.3.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
+    "gh-pages": "^6.3.0",
     "globals": "^17.6.0",
-    "vite": "^8.0.16"
+    "vite": "^8.0.12"
   },
   "dependencies": {
     "react": "^18.2.0",
