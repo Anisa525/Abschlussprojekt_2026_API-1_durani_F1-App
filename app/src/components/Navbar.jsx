@@ -14,7 +14,7 @@ function Navbar() {
         <Link to="/Dashboard">Dashboard</Link>
         <Link to="/Statistiken">Statistiken</Link>
         <Link to="/Chart">Charts</Link>
-        <Link to="/Circuits">Circuits</Link>
+        <Link to="/About_me">About_me</Link>
       </div>
     </nav>
   );
