@@ -19,7 +19,7 @@ function AboutMe() {
       {/* HERO */}
       <div className="about-hero">
         <img
-          src="/images/anisa.PNG"
+          src="./images/anisa.PNG"
           alt="Profile"
           className="about-image"
         />
