@@ -1,0 +1,89 @@
+.teams-page {
+  min-height: 100vh;
+  padding: 25px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.teams-title {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 25px;
+}
+
+.teams-search {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #334155;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.teams-search:focus {
+  outline: 2px solid #ef4444;
+}
+
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.team-card {
+  position: relative;
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+  border: 1px solid #334155;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(239, 68, 68, 0.3);
+}
+
+.team-stripe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #ef4444,
+    #f97316
+  );
+}
+
+.team-card h2 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #f8fafc;
+}
+
+.team-card p {
+  color: #cbd5e1;
+  margin-bottom: 8px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .teams-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Handy */
+@media (max-width: 600px) {
+  .teams-grid {
+    grid-template-columns: 1fr;
+  }
+}

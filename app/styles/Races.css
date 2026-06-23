@@ -4,15 +4,20 @@
   padding: 25px;
   color: white;
   font-family: Arial, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Titel */
 .race-title {
   text-align: center;
   margin-bottom: 25px;
   font-size: 2.3rem;
 }
 
-/* Suchfeld */
+/* Search */
 .race-search {
   width: 100%;
   max-width: 500px;
@@ -31,13 +36,17 @@
   outline: 2px solid #ef4444;
 }
 
-/* Rennen Übersicht */
+/* Grid */
 .race-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+
+  width: 100%;
+  justify-items: center;
 }
 
+/* Card */
 .race-card {
   position: relative;
   background: #1e293b;
@@ -48,14 +57,18 @@
   border: 1px solid #334155;
   transition: 0.3s;
   overflow: hidden;
+
+  width: 100%;
+  max-width: 320px;
 }
 
+/* Hover */
 .race-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(239, 68, 68, 0.3);
 }
 
-/* kleiner Akzentstreifen wie bei Teams */
+/* Akzentstreifen */
 .race-card::before {
   content: "";
   position: absolute;
@@ -66,6 +79,7 @@
   background: linear-gradient(90deg, #ef4444, #f97316);
 }
 
+/* Text */
 .race-card h3 {
   margin-bottom: 10px;
   color: #f8fafc;
@@ -78,6 +92,7 @@
 /* Detailseite */
 .race-detail-card {
   max-width: 700px;
+  width: 100%;
   margin: auto;
   background: #1e293b;
   padding: 25px;
@@ -85,6 +100,7 @@
   border: 1px solid #334155;
 }
 
+/* Rows */
 .race-row {
   display: flex;
   justify-content: space-between;
@@ -108,7 +124,7 @@
   color: #e2e8f0;
 }
 
-/* Responsive */
+/* 📱 RESPONSIVE */
 @media (max-width: 900px) {
   .race-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -118,5 +134,17 @@
 @media (max-width: 600px) {
   .race-grid {
     grid-template-columns: 1fr;
+  }
+
+  .race-title {
+    font-size: 1.8rem;
+  }
+
+  .race-card {
+    max-width: 100%;
+  }
+
+  .race-search {
+    max-width: 100%;
   }
 }
