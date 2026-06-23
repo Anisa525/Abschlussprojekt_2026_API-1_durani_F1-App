@@ -32,7 +32,7 @@ function App() {
         <Route path="/RaceDetail/:id" element={<RaceDetail />} />
         <Route path="/DriverDetail/:id" element={<DriverDetail />} />
 
-        <Route path="/React-Komponente" element={<React-Komponente />} />
+        <Route path="/Circuits" element={<Circuits />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
