@@ -1,0 +1,62 @@
+.circuits-page {
+  min-height: 100vh;
+  padding: 25px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.circuits-title {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 30px;
+}
+
+.circuits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.circuit-card {
+  position: relative;
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #334155;
+  transition: 0.3s;
+}
+
+.circuit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(239, 68, 68, 0.3);
+}
+
+.circuit-stripe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(90deg, #ef4444, #f97316);
+}
+
+.circuit-card h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.circuit-card p {
+  color: #cbd5e1;
+}
+
+@media (max-width: 1000px) {
+  .circuits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .circuits-grid {
+    grid-template-columns: 1fr;
+  }
+}

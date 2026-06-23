@@ -14,6 +14,7 @@ function Navbar() {
         <Link to="/Dashboard">Dashboard</Link>
         <Link to="/Statistiken">Statistiken</Link>
         <Link to="/Chart">Charts</Link>
+        <Link to="/React-Komponente">React-Komponente</Link>
       </div>
     </nav>
   );
