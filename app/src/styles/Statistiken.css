@@ -5,6 +5,12 @@
   min-height: 100vh;
   font-family: Arial, sans-serif;
   color: white;
+
+  background: #0f172a;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .stats-container h1 {
@@ -15,14 +21,20 @@
 
 .stats-section {
   margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .stats-section h2 {
   margin-bottom: 15px;
   color: #ef4444;
+  width: 100%;
+  max-width: 700px;
 }
 
-/* Stat Card (jetzt wie alle anderen Cards im Projekt) */
+/* Stat Card */
 .stat-card {
   display: flex;
   justify-content: space-between;
@@ -43,15 +55,16 @@
   overflow: hidden;
 
   width: 100%;
+  max-width: 700px; /* 🔥 sorgt für Dashboard Look */
 }
 
-/* Hover wie überall im System */
+/* Hover Effekt */
 .stat-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 15px 30px rgba(239, 68, 68, 0.25);
 }
 
-/* Akzentstreifen oben */
+/* Akzentstreifen */
 .stat-card::before {
   content: "";
   position: absolute;
@@ -65,4 +78,22 @@
 /* Text */
 .stat-card span {
   color: #e2e8f0;
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  .stats-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .stat-card {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .stats-section h2 {
+    text-align: center;
+  }
 }
