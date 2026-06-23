@@ -9,6 +9,7 @@ import Statistiken from "./pages/Statistiken";
 import RaceDetail from "./pages/RaceDetail";
 import DriverDetail from "./pages/DriverDetail";
 import Chart from "./pages/Chart";
+import Circuits from "./pages/Circuits";
 import NotFound from "./pages/NotFound";
 
 import Navbar from "./components/Navbar";
