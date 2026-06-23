@@ -3,8 +3,6 @@ import "../styles/About_me.css";
 const stats = [
   { label: "Favourite Team", value: "Red Bull Racing" },
   { label: "Favourite Driver", value: "Max Verstappen" },
-  { label: "Favourite Circuit", value: "Spa-Francorchamps" },
-  { label: "Seasons Watched", value: "8+" },
   { label: "Races Watched", value: "100+" },
   { label: "Passion Level", value: "∞" },
 ];
