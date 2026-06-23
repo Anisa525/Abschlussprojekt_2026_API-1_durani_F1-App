@@ -9,7 +9,7 @@ import Statistiken from "./pages/Statistiken";
 import RaceDetail from "./pages/RaceDetail";
 import DriverDetail from "./pages/DriverDetail";
 import Chart from "./pages/Chart";
-import Circuit from "./pages/Circuit";
+import Circuit from "./pages/Circuits";
 import NotFound from "./pages/NotFound";
 
 import Navbar from "./components/Navbar";
@@ -29,7 +29,7 @@ function App() {
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Statistiken" element={<Statistiken />} />
         <Route path="/Chart" element={<Chart />} />
-        <Route path="/Circuit" element={<Circuit />} />
+        <Route path="/Circuits" element={<Circuits />} />
 
         <Route path="/RaceDetail/:id" element={<RaceDetail />} />
         <Route path="/DriverDetail/:id" element={<DriverDetail />} />
