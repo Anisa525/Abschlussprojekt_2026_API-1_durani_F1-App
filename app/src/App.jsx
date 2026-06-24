@@ -16,7 +16,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter basename="/Abschlussprojekt_2026_API-1_durani_F1-App/">
       <Navbar />
 
       <Routes>
@@ -36,7 +36,7 @@ function App() {
 
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
