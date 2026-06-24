@@ -1,3 +1,12 @@
+/**
+ * Abschlussprojekt 2026
+ * Formula 1 Statistik App
+ *
+ * Autor: Anisa Durani
+ * Beschreibung: Statistiken-Seite
+ * Datenquelle: Supabase
+ * Technologie: React, Vite, React Router
+ */
 .stats-container {
   max-width: 1000px;
   margin: auto;

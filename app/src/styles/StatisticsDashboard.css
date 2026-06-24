@@ -1,3 +1,12 @@
+/**
+ * Abschlussprojekt 2026
+ * Formula 1 Statistik App
+ *
+ * Autor: Anisa Durani
+ * Beschreibung: Statistics Dashboard css
+ * Datenquelle: Supabase
+ * Technologie: React, Vite, React Router
+ */
 .dashboard {
   min-height: 100vh;
   padding: 25px;

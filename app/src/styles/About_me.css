@@ -1,3 +1,12 @@
+/**
+ * Abschlussprojekt 2026
+ * Formula 1 Statistik App
+ *
+ * Autor: Anisa Durani
+ * Beschreibung: About-me-Seite css
+ * Datenquelle: Supabase
+ * Technologie: React, Vite, React Router
+ */
 .about-page {
   min-height: 100vh;
   padding: 30px;
@@ -66,7 +75,6 @@
 /* STATS GRID - Jetzt komplett responsive ohne harte Brüche */
 .about-stats {
   display: grid;
-  /* Erstellt automatisch so viele Spalten wie Platz haben (mindestens 220px breit) */
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   margin-bottom: 40px;
@@ -116,9 +124,6 @@
   line-height: 1.6;
 }
 
-/* =========================
-   📱 RESPONSIVE DESIGN (Media Queries)
-   ========================= */
 
 /* TABLET (Kleine Desktops & Tablets) */
 @media (max-width: 1024px) {

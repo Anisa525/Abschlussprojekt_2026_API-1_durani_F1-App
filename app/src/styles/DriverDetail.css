@@ -1,3 +1,12 @@
+/**
+ * Abschlussprojekt 2026
+ * Formula 1 Statistik App
+ *
+ * Autor: Anisa Durani
+ * Beschreibung: Driver-Detailseite css
+ * Datenquelle: Supabase
+ * Technologie: React, Vite, React Router
+ */
 .f1-page {
   min-height: 100vh;
   padding: 30px;
