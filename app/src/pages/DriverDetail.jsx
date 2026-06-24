@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { supabase } from "../services/supabase";
-import "../styles/Drivers.css";
+import "../styles/DriverDetail.css";
 
 function DriverDetail() {
   const { id } = useParams();
@@ -19,11 +18,8 @@ function DriverDetail() {
       .eq("driver_id", id)
       .single();
 
-    if (error) {
-      console.error(error);
-    } else {
-      setDriver(data);
-    }
+    if (!error) setDriver(data);
+    else console.error(error);
   }
 
   if (!driver) {
@@ -35,9 +31,12 @@ function DriverDetail() {
       <h1 className="f1-title">Driver Details</h1>
 
       <div className="f1-detail-card">
+
         <div className="f1-row">
           <span className="f1-label">Name</span>
-          <span className="f1-value">{driver.forename} {driver.surname}</span>
+          <span className="f1-value">
+            {driver.forename} {driver.surname}
+          </span>
         </div>
 
         <div className="f1-row">
@@ -49,7 +48,9 @@ function DriverDetail() {
           <span className="f1-label">Geburt</span>
           <span className="f1-value">{driver.dob}</span>
         </div>
+
       </div>
+
       <Link to="/Drivers" className="back-button">
         ← Zurück zu den Fahrern
       </Link>
