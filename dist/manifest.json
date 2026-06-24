@@ -1,23 +1,19 @@
 {
   "name": "Formula 1 Statistik App",
   "short_name": "F1 App",
-
-  "start_url": ".",
-  "scope": ".",
-
+  "start_url": "../index.html",
   "display": "standalone",
   "theme_color": "#7d1c1c",
   "background_color": "#000000",
-
   "icons": [
     {
       "src": "f1-icon-512.png",
-      "sizes": "512x512",
+      "sizes": "any",
       "type": "image/png"
     },
     {
       "src": "f1-icon-192.png",
-      "sizes": "192x192",
+      "sizes": "any",
       "type": "image/png"
     }
   ]
