@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/Abschlussprojekt_2026_API-1_durani_F1-App/sw.js', { scope: '/Abschlussprojekt_2026_API-1_durani_F1-App/' })})}
